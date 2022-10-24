@@ -62,7 +62,7 @@ const Planet = () => {
               id={planets.name}
             >
               <img
-                src={"src/assets/planet-" + planets.name.toLowerCase() + ".svg"}
+                src={"/planet-" + planets.name.toLowerCase() + ".svg"}
               />
             </div>
             <div className="planet-info md:flex md:max-w-[600px] justify-around items-center md:space-x-8 lg:space-x-0 lg:block max-w-[327px] lg:max-w-[350px]">
@@ -103,7 +103,7 @@ const Planet = () => {
             >
               <img
                 src={
-                  "src/assets/planet-" +
+                  "/planet-" +
                   planets.name.toLowerCase() +
                   "-internal.svg"
                 }
@@ -144,12 +144,12 @@ const Planet = () => {
               id={planets.name}
             >
               <img
-                src={"src/assets/planet-" + planets.name.toLowerCase() + ".svg"}
+                src={"/planet-" + planets.name.toLowerCase() + ".svg"}
               />
               <img
                 className="hidden absolute md:block top-96 w-[100px] md:w-[262px] lg:h-[200px] lg:w-[163px]"
                 src={
-                  "src/assets/geology-" + planets.name.toLowerCase() + ".png"
+                  "/geology-" + planets.name.toLowerCase() + ".png"
                 }
               />
             </div>

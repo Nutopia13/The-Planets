@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="text-white border-b-2 border-slate-700  ">
       <nav className=" hidden mx-auto nav_desk md:flex items-center md:max-w-[665px] py-8 justify-between lg:max-w-[1250px]">
-        <h1 className="font-antonio text-3xl uppercase">The Planets</h1>
+        <Link to='/home'><h1 className="font-antonio text-3xl uppercase">The Planets</h1></Link>
         <ul className="font-spartan nav_anim  md:space-x-4 lg:space-x-8 w-[664px]  flex items-center justify-center tracking-wider uppercase text-xs font-bold">
           <li className="hover:opacity-100 opacity-70 duration-75 transition-all">
             <a

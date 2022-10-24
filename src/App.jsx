@@ -5,7 +5,7 @@ import Planet from "./pages/Planet.jsx";
 import Home from "./pages/Home";
 
 function App() {
-  const location = useLocation();
+
 
   return (
     <div className="App">
@@ -15,7 +15,7 @@ function App() {
       <main>
         <div>
           <AnimatePresence exitBeforeEnter>
-            <Routes key={location.pathname} location={location}>
+            <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/:planets" element={<Planet />} />
             </Routes>
