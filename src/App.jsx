@@ -16,7 +16,7 @@ function App() {
         <div>
           <AnimatePresence exitBeforeEnter>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/:planets" element={<Planet />} />
             </Routes>
           </AnimatePresence>
