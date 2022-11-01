@@ -6,6 +6,7 @@ import Data from "../../data.json";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "./Icons/RightArrow";
+import { Close } from "./Icons/Close";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -95,12 +96,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
             />
           ) : (
-            <img
-              src={hamb}
-              alt=""
-              className="max-h-[24px] opacity-60 duration-75 transition-all"
-              onClick={() => setIsOpen(!isOpen)}
-            />
+            <Close onClick={() => setIsOpen(!isOpen)}/>
           )}
         </div>
 
@@ -117,10 +113,16 @@ const Navbar = () => {
                 initial={{ y: -200, opacity: 0 }}
                 animate={{ y: 0, opacity: 1, delay: 1 }}
                 exit={{ y: -200, opacity: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 1,
+                delayChildren: 1,
+                staggerChildren: 1 }}
                 className="font-spartan  uppercase  mx-auto max-w-[327px]  text-base py-11 font-bold"
               >
-                <li
+                <motion.li
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -200, opacity: 0 }}
+                transition={{ duration: 1 }}
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex h-12 items-center  justify-between border-b-2 border-[#979797]  w-full"
                 >
@@ -129,8 +131,12 @@ const Navbar = () => {
                     <Link to="/mercury">Mercury</Link>
                   </div>
                   <ArrowRight />
-                </li>
-                <li
+                </motion.li>
+                <motion.li
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -200, opacity: 0 }}
+                transition={{ duration: 1 }}
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex justify-between border-b-2 border-[#979797] h-12 items-center w-full"
                 >
@@ -139,8 +145,12 @@ const Navbar = () => {
                     <Link to="/earth">Earth</Link>
                   </div>
                   <ArrowRight />
-                </li>
-                <li
+                </motion.li>
+                <motion.li
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -200, opacity: 0 }}
+                transition={{ duration: 1 }}
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex justify-between border-b-2 border-[#979797]  h-12 items-center w-full"
                 >
@@ -149,8 +159,12 @@ const Navbar = () => {
                     <Link to="/mars">Mars</Link>
                   </div>
                   <ArrowRight />
-                </li>
-                <li
+                </motion.li>
+                <motion.li
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -200, opacity: 0 }}
+                transition={{ duration: 1 }}
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex justify-between border-b-2 border-[#979797] h-12 items-center w-full"
                 >
@@ -159,8 +173,12 @@ const Navbar = () => {
                     <Link to="/venus">Venus</Link>
                   </div>
                   <ArrowRight />
-                </li>
-                <li
+                </motion.li>
+                <motion.li
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -200, opacity: 0 }}
+                transition={{ duration: 1 }}
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex justify-between border-b-2 border-[#979797] h-12 items-center w-full"
                 >
@@ -169,8 +187,12 @@ const Navbar = () => {
                     <Link to="/jupiter">Jupiter</Link>
                   </div>
                   <ArrowRight />
-                </li>
-                <li
+                </motion.li>
+                <motion.li
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -200, opacity: 0 }}
+                transition={{ duration: 1 }}
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex border-b-2 border-[#979797] justify-between h-12 items-center w-full"
                 >
@@ -179,8 +201,12 @@ const Navbar = () => {
                     <Link to="/saturn">Saturn</Link>
                   </div>
                   <ArrowRight />
-                </li>
-                <li
+                </motion.li>
+                <motion.li
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -200, opacity: 0 }}
+                transition={{ duration: 1 }}
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex border-b-2 border-[#979797] justify-between h-12 items-center w-full"
                 >
@@ -189,8 +215,12 @@ const Navbar = () => {
                     <Link to="/uranus">Uranus</Link>
                   </div>
                   <ArrowRight />
-                </li>
-                <li
+                </motion.li>
+                <motion.li
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -200, opacity: 0 }}
+                transition={{ duration: 1 }}
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex justify-between h-12 items-center w-full"
                 >
@@ -199,7 +229,7 @@ const Navbar = () => {
                     <Link to="/neptune">Neptune</Link>
                   </div>
                   <ArrowRight />
-                </li>
+                </motion.li>
               </motion.ul>
             </motion.div>
           )}
