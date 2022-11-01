@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <div className="text-white border-b-2 border-slate-700  ">
       <nav className=" hidden mx-auto nav_desk md:flex items-center md:max-w-[665px] py-8 justify-between lg:max-w-[1250px]">
-        <Link to='/'><h1 className="font-antonio text-3xl uppercase">The Planets</h1></Link>
+        <Link to="/">
+          <h1 className="font-antonio text-3xl uppercase">The Planets</h1>
+        </Link>
         <ul className="font-spartan nav_anim  md:space-x-4 lg:space-x-8 w-[664px]  flex items-center justify-center tracking-wider uppercase text-xs font-bold">
           <li className="hover:opacity-100 opacity-70 duration-75 transition-all">
             <a
@@ -118,81 +120,81 @@ const Navbar = () => {
                 transition={{ duration: 1 }}
                 className="font-spartan  uppercase  mx-auto max-w-[327px]  text-base py-11 font-bold"
               >
-                <li className="flex h-12 items-center  justify-between border-b-2 border-[#979797]  w-full">
-                  <div
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="space-x-6 flex items-center"
-                  >
+                <li
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="flex h-12 items-center  justify-between border-b-2 border-[#979797]  w-full"
+                >
+                  <div className="space-x-6 flex items-center">
                     <span className="dot1"></span>
                     <Link to="/mercury">Mercury</Link>
                   </div>
                   <ArrowRight />
                 </li>
-                <li className="flex justify-between border-b-2 border-[#979797] h-12 items-center w-full">
-                  <div
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="space-x-6 flex items-center"
-                  >
+                <li
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="flex justify-between border-b-2 border-[#979797] h-12 items-center w-full"
+                >
+                  <div className="space-x-6 flex items-center">
                     <span className="dot3"></span>
                     <Link to="/earth">Earth</Link>
                   </div>
                   <ArrowRight />
                 </li>
-                <li className="flex justify-between border-b-2 border-[#979797]  h-12 items-center w-full">
-                  <div
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="space-x-6 flex items-center"
-                  >
+                <li
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="flex justify-between border-b-2 border-[#979797]  h-12 items-center w-full"
+                >
+                  <div className="space-x-6 flex items-center">
                     <span className="dot4"></span>
                     <Link to="/mars">Mars</Link>
                   </div>
                   <ArrowRight />
                 </li>
-                <li className="flex justify-between border-b-2 border-[#979797] h-12 items-center w-full">
-                  <div
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="space-x-6 flex items-center"
-                  >
+                <li
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="flex justify-between border-b-2 border-[#979797] h-12 items-center w-full"
+                >
+                  <div className="space-x-6 flex items-center">
                     <span className="dot2"></span>
                     <Link to="/venus">Venus</Link>
                   </div>
                   <ArrowRight />
                 </li>
-                <li className="flex justify-between border-b-2 border-[#979797] h-12 items-center w-full">
-                  <div
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="space-x-6 flex items-center"
-                  >
+                <li
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="flex justify-between border-b-2 border-[#979797] h-12 items-center w-full"
+                >
+                  <div className="space-x-6 flex items-center">
                     <span className="dot5"></span>
                     <Link to="/jupiter">Jupiter</Link>
                   </div>
                   <ArrowRight />
                 </li>
-                <li className="flex border-b-2 border-[#979797] justify-between h-12 items-center w-full">
-                  <div
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="space-x-6 flex items-center"
-                  >
+                <li
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="flex border-b-2 border-[#979797] justify-between h-12 items-center w-full"
+                >
+                  <div className="space-x-6 flex items-center">
                     <span className="dot6"></span>
                     <Link to="/saturn">Saturn</Link>
                   </div>
                   <ArrowRight />
                 </li>
-                <li className="flex border-b-2 border-[#979797] justify-between h-12 items-center w-full">
-                  <div
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="space-x-6 flex items-center"
-                  >
+                <li
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="flex border-b-2 border-[#979797] justify-between h-12 items-center w-full"
+                >
+                  <div className="space-x-6 flex items-center">
                     <span className="dot7"></span>
                     <Link to="/uranus">Uranus</Link>
                   </div>
                   <ArrowRight />
                 </li>
-                <li className="flex justify-between h-12 items-center w-full">
-                  <div
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="space-x-6 flex items-center"
-                  >
+                <li
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="flex justify-between h-12 items-center w-full"
+                >
+                  <div className="space-x-6 flex items-center">
                     <span className="dot8"></span>
                     <Link to="/neptune">Neptune</Link>
                   </div>
